@@ -1,0 +1,2 @@
+- [Classics](/knowledge/classic-cocktails)
+- [Slack](https://swigged.slack.com/)

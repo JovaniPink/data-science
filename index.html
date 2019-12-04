@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <meta name="description" content="A platform for Bar Operations & Coaching">
+  <meta name='keywords' content='bartender, bartending, cocktails, coaching, management-system'>
+  <meta name='robots' content='index,follow'>
+
+  <!-- Title -->
+  <title>Swigged</title>
+
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="57x57" href="assets/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="assets/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="assets/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="assets/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="assets/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="assets/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="assets/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="assets/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+  <link rel="manifest" href="assets/favicon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="assets/favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <!-- TailwindCSS -->
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+  <!-- Theme -->
+  <link rel="stylesheet" href="https://unpkg.com/docsify-themeable/dist/css/theme-simple.css">
+  <!-- <link rel="stylesheet" href="https://unpkg.com/docsify-themeable/dist/css/theme-simple-dark.css"> -->
+  <!-- <link rel="stylesheet" href="https://unpkg.com/docsify-themeable/dist/css/theme-defaults.css"> -->
+  <!-- PrismJS Themes -->
+  <!-- <link rel="stylesheet" href="https://unpkg.com/prism-github/prism-github.css"> -->
+  <!-- <link rel="stylesheet" href="https://unpkg.com/prism-theme-one-dark/prism-onedark.css"> -->
+
+  <!-- Custom Theme Properties -->
+  <style>
+    :root {
+      /* Reduce the font size */
+      /* --base-font-size: 14px; */
+
+      /* Change the theme color hue (0-360) */
+      /* --theme-hue: 325; */
+
+      /* Add sidebar navigation bullets */
+      /* --sidebar-nav-link-before-content-l1: '😀'; */
+      /* --sidebar-nav-link-before-content-l2: '💩'; */
+
+      --heading-h1-font-weight: bold;
+    }
+  </style>
+  <style>
+    .sidebar {
+      padding-top: 0;
+    }
+
+    .search {
+      margin-bottom: 20px;
+      padding: 6px;
+      border-bottom: 1px solid #eee;
+    }
+
+    .search .results-panel {
+      display: none;
+    }
+
+    .search .results-panel.show {
+      display: block;
+    }
+
+    .search input {
+      outline: none;
+      border: none;
+      width: 100%;
+      padding: 7px;
+      line-height: 22px;
+      font-size: 14px;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+    }
+
+    .search h2 {
+      font-size: 17px;
+      margin: 10px 0;
+    }
+
+    .search a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .search .matching-post {
+      border-bottom: 1px solid #eee;
+    }
+
+    .search .matching-post:last-child {
+      border-bottom: 0;
+    }
+
+    .search p {
+      font-size: 14px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+    }
+
+    .search p.empty {
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="app"></div>
+  <script>
+    window.$docsify = {
+      // GENERAL
+      // -----------------------------------------------------------------
+      name: 'Swigged',
+      repo: 'https://github.com/MeasuredStudios/swigged.app',
+      el: '#app',
+      // coverpage: false,
+      homepage: 'README.md',
+      themeColor: '#d50f23',
+      loadSidebar: true,
+      loadNavbar: true,
+      // NAVIGATION
+      // -----------------------------------------------------------------
+      auto2top: true,
+      maxLevel: 6,
+      subMaxLevel: 3,
+      // PLUGINS
+      // -----------------------------------------------------------------
+      // theme
+      themeable: {
+        // readyTransition : false,
+        // responsiveTables: false
+      },
+      // executeScript: true,
+      // ga    : '',
+      search: {
+        depth: 3,
+        noData: 'No results!',
+        placeholder: 'Search...'
+      }
+    }
+  </script>
+  <!-- Required: Vue -->
+  <script src="https://unpkg.com/vue/dist/vue.min.js"></script>
+
+  <!-- Required: docsify + docsify-themeable -->
+  <script src="https://unpkg.com/docsify/lib/docsify.min.js"></script>
+  <script src="https://unpkg.com/docsify-themeable"></script>
+
+  <!-- Docsify Plugins -->
+  <script src="https://unpkg.com/docsify/lib/plugins/search.js"></script>
+  <!-- <script src="https://unpkg.com/docsify-copy-code"></script> -->
+  <!-- <script src="https://unpkg.com/docsify-pagination/dist/docsify-pagination.min.js"></script> -->
+  <!-- <script src="https://unpkg.com/docsify/lib/plugins/zoom-image.min.js"></script> -->
+</body>
+
+</html>

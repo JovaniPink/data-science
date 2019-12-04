@@ -1,0 +1,39 @@
+{
+  "title": "Swigged App",
+  "name": "swigged-app",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A Platform for Bar Operations & Coaching.",
+  "keywords": [
+    "bartender",
+    "bartending",
+    "cocktails",
+    "coaching",
+    "management-system"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MeasuredStudios/swigged.app"
+  },
+  "bugs": {
+    "url": "https://github.com/MeasuredStudios/swigged.app/issues"
+  },
+  "author": "Jovani Pink",
+  "contributors": [
+    "Jovani Pink (https://www.jovanipink.com/)"
+  ],
+  "main": "index.html",
+  "dependencies": {},
+  "devDependencies": {
+    "prettier": "1.18.2"
+  },
+  "scripts": {},
+  "browserslist": [
+    "last 2 versions",
+    "not dead"
+  ],
+  "engines": {
+    "node": ">= 8.16.2"
+  }
+}
